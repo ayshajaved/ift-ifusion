@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact IFT iFusion - Get in touch for solar energy solutions in Pakistan">
+    <title>Contact Us - IFT iFusion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    
+                    <img src="images/logo.svg" alt="IFT iFusion Logo">
+                    <span>IFT <span class="highlight">iFusion</span></span>
+                </a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section id="page-banner" class="parallax">
+        <div class="container">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">Get in touch with our team for inquiries, quotes, or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Reach Us</h2>
+                <p>We're here to assist you with all your solar energy needs</p>
+            </div>
+            <div class="contact-cards">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Office Address, Islamabad, Pakistan</p>
+                    <p class="small">Parent Company: 4th Floor, ZhuJiang Building, No. 280 ZhuJiang Road, XuanWu District, NanJing, JiangSu Province, China</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+92 XXX XXXXXXX</p>
+                    <p>Monday to Friday: 9am - 6pm</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@iftifusion.com</p>
+                    <p>sales@iftifusion.com</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+                <form id="inquiry-form" class="fade-in">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="validation-message"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="validation-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="validation-message"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div class="validation-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Type <span class="required">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="quote">Request a Quote</option>
+                            <option value="product">Product Information</option>
+                            <option value="support">Technical Support</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="validation-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="validation-message"></div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to IFT iFusion collecting and storing my data from this form. <span class="required">*</span></label>
+                        <div class="validation-message"></div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                        <button type="reset" class="btn btn-secondary"><i class="fas fa-redo"></i> Reset Form</button>
+                    </div>
+                </form>
+                <div id="form-success" class="form-success">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+                    <button id="send-another" class="btn btn-secondary">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <div class="map-container">
+            <!-- Placeholder for map - In a real implementation, this would be replaced with an actual map API -->
+            <div class="map-placeholder">
+                <img src="https://via.placeholder.com/1200x400?text=Interactive+Map+of+IFT+iFusion+Location" alt="Map Location">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="contact-faq" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common inquiries</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I expect a response to my inquiry?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to all inquiries within 24-48 business hours. For urgent matters, we recommend calling our office directly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide on-site consultations?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer on-site consultations for both residential and commercial projects. Our team will assess your location, energy needs, and provide tailored recommendations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I request product samples before making a large order?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we can provide product samples for qualified business customers. Please contact our sales team with your specific requirements to discuss sample availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer installation services?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with a network of certified installation partners across Pakistan. When you purchase our products, we can connect you with qualified installers in your area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="IFT iFusion Logo">
+                    <h3>IFT <span class="highlight">iFusion</span></h3>
+                    <p>Powering Pakistan's sustainable future</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html#micro-inverters">Micro-inverters</a></li>
+                        <li><a href="products.html#energy-storage">Energy Storage</a></li>
+                        <li><a href="products.html#fttx">FTTx Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Office Address, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92 XXX XXXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@iftifusion.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 IFT iFusion. All Rights Reserved.</p>
+                <p>A subsidiary of <a href="https://www.ifusion-tech.com" target="_blank">Nanjing Ifusion Technology Co., Ltd.</a></p>
+            </div>
+        </div>
+        <a href="#header" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

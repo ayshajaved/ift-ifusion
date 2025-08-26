@@ -1,0 +1,253 @@
+/* 
+   IFT iFusion Website Responsive Styles
+   CSS file for handling responsive design across different screen sizes
+*/
+
+/* Large Devices (less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .overview-content,
+    .certifications-content,
+    .patents-content,
+    .product-overview {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(50% - 30px);
+    }
+}
+
+
+
+/* Medium Devices (less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 250px;
+        height: calc(100vh - 70px);
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+    
+    .nav-menu li a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    #hero {
+        height: auto;
+        min-height: 500px;
+        padding: 100px 0;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .product-carousel,
+    .testimonial-carousel {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .product-carousel::-webkit-scrollbar,
+    .testimonial-carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .product-card,
+    .testimonial-card {
+        scroll-snap-align: start;
+        min-width: 280px;
+    }
+    
+    .category-nav {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .category-link {
+        white-space: nowrap;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+/* Small Devices (less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-padding-sm {
+        padding: 30px 0;
+    }
+    
+    .features-grid,
+    .philosophy-grid,
+    .team-grid,
+    .blog-grid,
+    .product-grid,
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline:before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-date {
+        left: 70px;
+        top: -30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        left: 60px !important;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+        left: 70px;
+        right: auto;
+        text-align: left;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .modal-content {
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
+
+/* Extra Small Devices (less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.35rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    .logo span {
+        font-size: 1.25rem;
+    }
+    
+    #page-banner {
+        height: 200px;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+    }
+    
+    .product-actions .btn {
+        width: 100%;
+    }
+    
+    .certification-logos {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+}
