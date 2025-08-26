@@ -143,6 +143,7 @@ function initCarousel(carouselClass, dotClass, prevClass, nextClass) {
     
     let currentIndex = 0;
     let autoplayInterval;
+    let initialUpdate = true;
     
     // Create dots if container exists
     if (dotsContainer) {
@@ -184,11 +185,13 @@ function initCarousel(carouselClass, dotClass, prevClass, nextClass) {
     function updateCarousel() {
         // For mobile scroll snap
         if (window.innerWidth < 992) {
-            items[currentIndex].scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'start'
-            });
+            if (!initialUpdate) {
+                items[currentIndex].scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'start'
+                });
+            }
         } else {
             // For desktop transform
             const offset = -currentIndex * (items[0].offsetWidth + 30); // 30px is the gap
@@ -224,6 +227,7 @@ function initCarousel(carouselClass, dotClass, prevClass, nextClass) {
     
     // Initialize
     updateCarousel();
+    initialUpdate = false;
     startAutoplay();
     
     // Pause autoplay on hover
