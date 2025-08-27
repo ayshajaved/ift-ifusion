@@ -357,7 +357,10 @@ nav {
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .product-card {
@@ -366,8 +369,8 @@ nav {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    flex: 1;
     min-width: 300px;
+    flex: 0 0 calc(33.333% - 20px);
 }
 
 .product-card:hover {
@@ -470,6 +473,31 @@ nav {
     transform: scale(1.2);
 }
 
+/* Carousel visibility fix */
+.product-carousel,
+.testimonial-carousel {
+    width: 100%;
+}
+
+.product-carousel .product-card,
+.testimonial-carousel .testimonial-card {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.product-carousel .product-card[style*="none"],
+.testimonial-carousel .testimonial-card[style*="none"] {
+    display: none;
+}
+
+/* Ensure cards are visible by default */
+.product-card,
+.testimonial-card {
+    display: block !important;
+    opacity: 1 !important;
+}
+
 /* ===== Why Choose Us Section ===== */
 #why-choose-us {
     padding: var(--section-padding);
@@ -530,7 +558,10 @@ nav {
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .testimonial-card {
@@ -539,8 +570,8 @@ nav {
     padding: 30px;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    flex: 1;
     min-width: 300px;
+    flex: 0 0 calc(33.333% - 20px);
 }
 
 .testimonial-card:hover {

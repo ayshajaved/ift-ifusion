@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFaqAccordion();
     initContactForm();
     initProductModals();
-    initParticles();
+        initParticles();
     // Spline viewer initialization removed
 });
 
@@ -126,10 +126,10 @@ function initScrollEffects() {
 // Product and testimonial carousels
 function initCarousels() {
     // Product carousel
-    initCarousel('product-carousel', 'carousel-dot', 'carousel-prev', 'carousel-next');
+    initCarousel('featured-products', 'carousel-dot', 'prev', 'next');
     
     // Testimonial carousel
-    initCarousel('testimonial-carousel', 'testimonial-dot', 'testimonial-prev', 'testimonial-next');
+    initCarousel('testimonials', 'testimonial-dot', 'prev', 'next');
 }
 
 function initCarousel(carouselClass, dotClass, prevClass, nextClass) {
@@ -137,7 +137,12 @@ function initCarousel(carouselClass, dotClass, prevClass, nextClass) {
     if (!carousel) return;
     
     const items = carousel.querySelectorAll('.product-card, .testimonial-card');
-    const dotsContainer = document.querySelector(`.${carouselClass}-dots`);
+    let dotsContainer;
+    if (carouselClass === 'featured-products') {
+        dotsContainer = document.querySelector('.carousel-dots');
+    } else if (carouselClass === 'testimonials') {
+        dotsContainer = document.querySelector('.testimonial-dots');
+    }
     const prevButton = document.querySelector(`.${prevClass}`);
     const nextButton = document.querySelector(`.${nextClass}`);
     
